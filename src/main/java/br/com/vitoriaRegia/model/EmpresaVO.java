@@ -1,7 +1,5 @@
-package br.com.vitoriaRegia.model;
+package br.com.vitoriaregia.model;
 
 public class EmpresaVO {
 
-	public Long id;
-	
 }
