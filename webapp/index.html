@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css"
+	href="css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css"
+	href="css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="resources/css/style.css" />
+
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+
+<script src="js/angular.js"></script>
+<script src="js/angular-ui-router.min.js"></script>
+<script src="controller/app.js"></script>
+<script src="controller/home/homeController.js"></script>
+<script src="controller/despesa/despesaController.js"></script>
+<script src="js/ui-bootstrap-tpls-2.5.0.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script src="js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+<script src="js/bootbox.min.js"></script>
+
+<!-- <link rel="icon" href="resources/img/icon.png" type="image/x-icon"> -->
+
+<title>Controle Financeiro</title>
+
+</head>
+
+<body ng-app="app">
+
+	<div class="geral">
+
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="navbar-header">
+				<a class="navbar-brand" ui-sref="" style="color: red;" title="">DL</a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li><a ui-sref="home">Home</a></li>
+				<li><a ui-sref="home2">Home2</a></li>
+			</ul>
+		</nav>
+
+		<div class="container">
+			<div ui-view></div>	
+		</div>
+		
+		<div class="footer"></div>
+
+	</div>
+
+</body>
+</html>
