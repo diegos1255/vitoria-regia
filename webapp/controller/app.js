@@ -1,6 +1,11 @@
 var app = angular.module('app', ['ui.router', 'ui.bootstrap']);
 
-app.config(function($stateProvider, $urlRouterProvider) {
+app.config(function($stateProvider, $locationProvider) {
+
+	/*$locationProvider.html5Mode({
+		enabled: true,
+		requireBase: false
+	});*/
 
 	$stateProvider
 
@@ -12,9 +17,9 @@ app.config(function($stateProvider, $urlRouterProvider) {
 		url: '/home',
 		templateUrl: 'pages/home.html'
 	})
-	.state('home2', {
-		url: '/home2',
-		templateUrl: 'pages/home2.html'
+	.state('nomes', {
+		url: '/nomes',
+		templateUrl: 'pages/teste.jsp'
 	});
-	
+
 });
