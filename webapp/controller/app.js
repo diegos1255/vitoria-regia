@@ -1,4 +1,4 @@
-var app = angular.module('app', ['ui.router', 'ui.bootstrap']);
+var app = angular.module('app', ['ui.router', 'ui.bootstrap', 'oitozero.ngSweetAlert']);
 
 app.config(function($stateProvider, $locationProvider) {
 
@@ -15,7 +15,7 @@ app.config(function($stateProvider, $locationProvider) {
 	})
 	.state('home', {
 		url: '/home',
-		templateUrl: 'pages/home.html'
+		templateUrl: 'pages/home.jsp'
 	})
 	.state('nomes', {
 		url: '/nomes',

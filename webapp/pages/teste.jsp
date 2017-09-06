@@ -26,7 +26,9 @@
     <p ng-if="msgErro" style="color: red;">Erro: {{msgErro}}</p>
     
     <br />
+    
     <input type="text" id="nome" class="form-control" ng-model="nome" />
+    
     <br />
     <button type="submit" class="btn btn-danger" ng-click="atualizar()">Atualizar</button>
 
